@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .shital{
+            color: deeppink;
+            text-shadow: 3px 3px 7px blue;
+            font-family: 'Edwardian Script ITC';
+            animation-name: text;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            letter-spacing: 5px;
+        }
+        @keyframes text{
+            10%{color: red; text-shadow: 3px 3px 7px black;}
+            20%{transform: translate(200px,200px);}
+            30%{color: aqua; text-shadow: 3px 3px 7px purple;}
+            40%{transform: translateY(200px);}
+        }
+        .cont{
+            height: 70px;
+            width: 100px;
+            /* background-color: turquoise; */
+            box-shadow: 2px 2px 9px black;
+            margin-left: 600px;
+            animation-name: text2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            position: relative;
+        }
+        
+        .cont h1{
+            color: deeppink;
+            text-align: center;
+            font-family: 'Edwardian Script ITC';
+            line-height: 70px;
+            
+        }
+        @keyframes text2{
+            0%{left: 0px; top: 0px; transform: rotate(45deg);}
+            25%{color: blue; left: 200px; top: 0px;}
+            50%{color: red; left: 200px; top: 200px; transform: rotate(45deg);}
+            75%{color: blueviolet; left: 0px; top: 200px;}
+            100%{ left: 0px; top: 0px;}
+            /* from{top: 0px;}
+            to{left: 200px;} */
+        }
+        .mansi{
+            color: purple;
+            text-align: end;
+            font-family: 'Edwardian Script ITC';
+            animation-name: text3;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+        @keyframes text3{
+            0%{right: 0px; top: 0px;}
+            10%{color: brown; right: 200px; top: 0px;}
+            20%{color: deeppink; right: 200px; top: 200px;}
+            30%{color: red; right: 0px; top: 200px;}
+            40%{right: 0px; top: 0px;}
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="shital">Shital</h1>
+    
+    <div class="cont"><h1>Poonam</h1></div>
+    
+
+    <h1 class="mansi">Mansi</h1>
+</body>
+</html>
